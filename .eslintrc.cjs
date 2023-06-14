@@ -12,4 +12,12 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
+  overrides: [
+    {
+      files: ['**/*.cjs'],
+      env: {
+        node: true,
+      },
+    },
+  ],
 }
